@@ -1,0 +1,11 @@
+<h2>ngClass</h2>
+
+<div [ngClass]="classes">
+    <p>This text {{is(classes["red-text"])}} red, {{is(isBold)}} bold, and {{is(isCentered)}} centered.</p>
+</div>
+
+
+<button type="button" (click)="toggleColor()">{{isRed ? 'Unset' : 'Set'}} red</button>
+<button type="button" (click)="toggleFont()">{{isBold ? 'Unset' : 'Set'}} bold</button>
+<button type="button" (click)="toggleAlignment()">{{isCentered ? 'Unset' : 'Set'}} center</button>
+  
