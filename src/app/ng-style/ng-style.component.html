@@ -1,0 +1,11 @@
+<h2>ngStyle</h2>
+
+<div [ngStyle]="styles">
+    <p>This text has the following:</p>
+    <ul *ngFor="let style of styles | keyvalue">
+        <li>{{style.key}}: {{style.value}}</li>
+    </ul>
+</div>
+
+
+<button type="button" (click)="toggleStyles()">Toggle styles</button>
